@@ -7,10 +7,16 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-
 const addOne = (arr) => {
-  // Solution code here...
+  const myArray = [];
+
+  arr.forEach((element) => {
+    myArray.push(element +1);
+  });
+  return myArray;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -21,7 +27,11 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  const myArray = [];
+  arr.forEach((element) => {
+    myArray.push(element + '!');
+  });
+  return myArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,7 +43,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  const myArray = [];
+  arr.forEach((element) => {
+    myArray.push(element.toUpperCase());
+  });
+  return myArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
