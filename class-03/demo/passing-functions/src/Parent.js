@@ -1,0 +1,53 @@
+/**
+ * @file Parent.js
+ * @author Code Fellows
+ * @description represents a Parent person
+ */
+import React from "react";
+import { Card, CardGroup } from "react-bootstrap";
+import Child from "./Child";
+
+/**
+ * A parent person
+ */
+class Parent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      billysMoney: 0,
+      money: 100,
+    };
+  }
+
+  giveMoneyToBilly = (dollars) => {
+    const parentBalance = this.state.money - dollars;
+    this.setState({
+      billysMoney: this.state.billysMoney + dollars,
+      money: parentBalance,
+    });
+    if (parentBalance < 0) {
+      this.props.onOverdraft();
+    }
+  };
+
+  render() {
+    return (
+      <CardGroup>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>Parent</Card.Title>
+            <Card.Text>
+              I am the parent. I have {this.state.money} dollars.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Child
+          askForMoney={this.giveMoneyToBilly}
+          billysMoney={this.state.billysMoney}
+        />
+      </CardGroup>
+    );
+  }
+}
+
+export default Parent;

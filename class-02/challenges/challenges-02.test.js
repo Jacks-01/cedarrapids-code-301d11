@@ -25,14 +25,9 @@ const addOne = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named addQuestion that, given an array of strings, uses map to return a new 
-
-array containing each string followed by a question mark character.
+Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
 ------------------------------------------------------------------------------------------------ */
 
-/**
- * 
- */
 const addQuestion = (arr) => {
   // Solution code here...
 };
@@ -104,8 +99,7 @@ CHALLENGE 9 - Stretch Goal
 
 Use the snorlaxAbilities data, below, for this challenge.
 
-Write a function named extractAbilities that, given the array of abilities, uses 
-map to create an array containing only the ability name.
+Write a function named extractAbilities that, given the array of abilities, uses map to create an array containing only the ability name.
 
 Note: Because this function is expecting the array of abilities, it will be invoked as:
 extractAbilities(snorlaxAbilities.abilities)
@@ -142,15 +136,8 @@ const snorlaxAbilities = {
   weight: 4600,
 };
 
-/**
- * Write a function named extractAbilities that, given the array of abilities, uses 
- * map to create an array containing only the ability name.*
- */
 const extractAbilities = (arr) => {
   // Solution code here...
-  return arr.map( (item) => {
-    return item.ability.name;
-  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -158,8 +145,7 @@ CHALLENGE 10 - Stretch Goal
 
 Use the snorlaxStats data, below, for this challenge.
 
-Write a function named extractStats that, given an array of stats, 
-uses map to return an array of objects containing the stat name and the total.
+Write a function named extractStats that, given an array of stats, uses map to return an array of objects containing the stat name and the total.
 
 The total should be the sum of the effort and the baseStat.
 
@@ -197,22 +183,8 @@ const snorlaxStats = {
   weight: 4600,
 };
 
-/**
- * Write a function named extractStats that, given an array of stats, 
-uses map to return an array of objects containing the stat name and the total.
-
-The total should be the sum of the effort and the baseStat.
-
-Here is an example of a single array element: { name: 'speed', total: 35 }
-
- * @param {array} arr 
-@returns array of objects with name and total
- */
 const extractStats = (arr) => {
   // Solution code here...
-  return arr.map( (item)=>{
-    return {name:item.stat.name, total: item.baseStat + item.effort};
-  });
 };
 
 /* ------------------------------------------------------------------------------------------------
