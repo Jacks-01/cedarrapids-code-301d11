@@ -4,15 +4,18 @@
  * @description
  */
 import React, { Component } from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 class App extends Component {
   state = {  } 
   render() { 
     return (
       <div className='App'>
-        <p>Header</p>
-        <p>Main</p>
-        <p>Footer</p>
+        <Header/>
+        <Main/>
+        <Footer/>
       </div>
     );
   }
