@@ -32,9 +32,13 @@ Write a function called sortNames that takes an array of names and sorts them al
 
 For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
-
+/**
+ * 
+ * @param {array} arr an array of names
+ * @returns an array with elements in alphabetical order.
+ */
 const sortNames = (arr) => {
-  // Solution code here...
+  return arr.sort();
 };
 
 /* ------------------------------------------------------------------------------------------------
