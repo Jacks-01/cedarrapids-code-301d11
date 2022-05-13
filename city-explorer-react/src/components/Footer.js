@@ -9,7 +9,7 @@
      render() {
          return (
              <div id="Footer">
-                 
+                 <p>Footer Stuff</p>
              </div>
          );
      }

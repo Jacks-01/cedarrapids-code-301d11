@@ -1,6 +1,5 @@
 /**
- * @file Header.js
- * @author Code Fellows
+ * 
  */
 import React, { Component } from 'react';
 
