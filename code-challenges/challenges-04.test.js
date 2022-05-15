@@ -27,7 +27,7 @@ function lower(str) {
  * 
  * @param {array} arr an array of strings (animal names)
  * @param {function} callback a callback function to run.
- * @returns 
+ * @returns
  */
 const updateAnimal = (arr, callback) => {
   let upper = [];
@@ -145,7 +145,9 @@ and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 ----------------------------------------------------------------------------- */
 
 const alphabetizeBetter = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  });
 };
 
 /* -----------------------------------------------------------------------------
