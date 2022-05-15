@@ -81,8 +81,13 @@ returns the same array, with the numbers sorted, largest to smallest.
 HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 ----------------------------------------------------------------------------- */
 
+/**
+ * 
+ * @param {array} arr an array of numbers
+ * @returns array that is sorted largest to smallest
+ */
 const sortBackwards = (arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => { return b - a;});
 };
 
 /* -----------------------------------------------------------------------------
@@ -96,8 +101,13 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ----------------------------------------------------------------------------- */
 
+/**
+ * 
+ * @param {array} arr an array of strings
+ * @returns array sorted alphabetically
+ */
 const alphabetize = (arr) => {
-  // Solution code here...
+  return arr.sort();
 };
 
 /* -----------------------------------------------------------------------------
@@ -115,8 +125,12 @@ Here is an example of the input:
 ];
 ----------------------------------------------------------------------------- */
 
+/**
+ * 
+ * @param {array} arr an array of objects with key value pairs.
+ */
 const sortByPrice = (arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => {return a.price - b.price;});
 };
 
 /* -----------------------------------------------------------------------------
