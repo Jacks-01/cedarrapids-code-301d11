@@ -12,6 +12,7 @@ DOCTORS = [
     {'number': 6, 'actor': 'Colin Baker', 'begin': 1984, 'end': 1986},
     {'number': 7, 'actor': 'Sylvester McCoy', 'begin': 1987, 'end': 1989},
     {'number': 8, 'actor': 'Paul McGann', 'begin': 1996, 'end': 1996},
+    {'number': 8.5, 'actor': 'John Hurt', 'begin': 1996, 'end': 2013},
     {'number': 9, 'actor': 'Christopher Eccleston', 'begin': 2005, 'end': 2005},
     {'number': 10, 'actor': 'David Tennant', 'begin': 2005, 'end': 2010},
     {'number': 11, 'actor': 'Matt Smith', 'begin': 2010, 'end': 2013},
