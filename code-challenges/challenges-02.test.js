@@ -209,9 +209,8 @@ Here is an example of a single array element: { name: 'speed', total: 35 }
 @returns array of objects with name and total
  */
 const extractStats = (arr) => {
-  // Solution code here...
   return arr.map( (item)=>{
-    return {name:item.stat.name, total: item.baseStat + item.effort};
+   return {name:item.stat.name, total: item.baseStat + item.effort};
   });
 };
 

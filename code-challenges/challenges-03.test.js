@@ -8,8 +8,13 @@ value using a for loop. Place the new value in a new array. Return the new
 array.
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * @param {array} arr An array of numbers
+ * @returns a new array with 2 added to all of the values in the previous array.
+ */
 const addTwo = (arr) => {
-  // Solution code here...
+  let myArray = arr.map(item => item + 2);
+  return myArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,8 +26,15 @@ return an array containing only the numbers.
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * ! Uses Array.Prototype.Filter()
+ * @param {array} arr an Array of items
+ * @returns returns a new array with only the numbers in @param{arr}
+ */
 const typeNum = (arr) => {
-  // Solution code here...
+  let items = arr.filter(item => typeof item === 'number');
+  return items;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,8 +47,13 @@ within the string.
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * ! Uses Array.Prototype.Filter
+ * @param {array} arr an array of strings
+ * @returns an array containing only strings that contain the string 'and'
+ */
 const containsAnd = (arr) => {
-  // Solution code here...
+  return arr.filter(element => element.includes('and'));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,8 +65,13 @@ filter to return an array containing only the odd integers.
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * ! Uses Array.Prototype.Filter
+ * @param {array} arr an array of intergers
+ * @returns an array of only odd integers
+ */
 const oddValues = (arr) => {
-  // Solution code here...
+  return arr.filter(element => element % 2 === 1);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,8 +84,15 @@ included in the first array.
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * ! Uses Array.Prototype.Filter
+ * @param {array} forbiddenValues [1,2,3]
+ * @param {array} arr [1,2,3,4])
+ * @returns new array with [4]
+ */
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+  return arr.filter(element => !forbiddenValues.includes(element));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
