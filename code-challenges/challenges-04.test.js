@@ -26,15 +26,13 @@ function lower(str) {
 /**
  * 
  * @param {array} arr an array of strings (animal names)
- * @param {function} callback a callback function to run.
- * @returns
+ * @param {function} thingToDo a callback function to run.
+ * @returns array of altered strings
  */
-const updateAnimal = (arr, callback) => {
-  let upper = [];
-  let lower = [];
-  arr.map(callback());
-  
-
+const updateAnimal = (arr, thingToDo) => {
+  return arr.map( (element)=>{
+    return thingToDo(element);
+  });
 };
 
 /* -----------------------------------------------------------------------------
@@ -143,9 +141,13 @@ should not change the sort order of two strings.
 For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, 
 and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 ----------------------------------------------------------------------------- */
-
+/**
+ * 
+ * @param {array} arr an array of strings
+ * @returns array in alphabetized order
+ */
 const alphabetizeBetter = (arr) => {
-  arr.sort((a,b) => {
+  return arr.sort((a,b) => {
     return a.toLowerCase().localeCompare(b.toLowerCase());
   });
 };
@@ -332,7 +334,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should alphabetize without regard to capitalization', () => {
     expect(alphabetizeBetter(['Alice', 'apple', 'alert', 'Average'])).toStrictEqual([ 'alert', 'Alice', 'apple', 'Average' ]);
     const ans = alphabetizeBetter(['alphabet', 'Zebra', 'Alphabet', 'carrot']);
