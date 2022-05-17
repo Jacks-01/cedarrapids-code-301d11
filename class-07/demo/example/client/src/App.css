@@ -1,0 +1,13 @@
+body {
+  background-color: aliceblue;
+}
+
+form label {
+  padding: 0.5em;
+}
+
+.dataDisplayDiv{
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+}
