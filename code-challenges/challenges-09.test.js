@@ -8,8 +8,14 @@ using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
+
+/**
+ * 
+ * @param {array} arr an array of numbers
+ * @returns {number} - largest number in the array
+ */
 const maxInArray = (arr) => {
-  // Solution code here...
+  // Solution  here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -24,8 +30,12 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true
 };
 
+/**
+ * 
+ * @param {object} obj - an object with multiple keys
+ */
 const getCourseKeys = (obj) => {
-  // Solution code here...
+  return obj.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,7 +47,7 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
