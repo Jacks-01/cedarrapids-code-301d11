@@ -131,8 +131,24 @@ This function should then raise 2 to the power of the resulting numbers, returni
 For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
+/**
+ * 
+ * @param {array} input - a multidimensional array
+ * @returns - a multidimensional arrays
+ */
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  let firstArray = input.map((arr) => {
+    return arr.filter((num) => {
+      return (Number.isFinite(num) && num%5===0);
+    });
+  });
+  console.log(firstArray);
+  return firstArray.map((arr) => {
+    return arr.map((num)=>{
+      return Math.pow(2, num);
+    });
+  });
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -242,7 +258,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   test('It should add all the numbers in the arrays', () => {
     const nums = [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]];
 
@@ -250,7 +266,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return numbers divisible by five, then raise two to the power of the resulting numbers', () => {
     expect(divisibleByFiveTwoToThePower([[10, 20, 5, 4], [5, 6, 7, 9], [1, 10, 3]])).toStrictEqual([[1024, 1048576, 32], [32], [1024]]);
   });
