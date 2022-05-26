@@ -19,7 +19,7 @@ app.use('*', (req,res) => {
   res.status(404).send('These are not the droids you are looking for.');
 });
 
-app.use( (error,req,res,next) => {
+app.use( (error,req,res) => {
   res.status(500).send(`My Bad ... ${error.message}`);
 });
 
