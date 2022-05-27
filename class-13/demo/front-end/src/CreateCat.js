@@ -5,6 +5,10 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 
 class CreateCat extends React.Component {
+  /**
+   *
+   * @param {object} evt - the event
+   */
   handleSubmit = (evt) => {
     evt.preventDefault();
     console.log(`CatCreate.handleSubmit()`);
