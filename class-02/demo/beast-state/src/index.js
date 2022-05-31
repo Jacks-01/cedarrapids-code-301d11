@@ -1,3 +1,12 @@
+/**
+ * @file index.js
+ * @date 2022-05-31
+ * @author Code Fellows
+ * @description The standard index file for a React application.
+ * 
+ */
+'use strict';
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";

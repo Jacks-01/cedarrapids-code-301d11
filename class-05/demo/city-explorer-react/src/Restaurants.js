@@ -1,10 +1,17 @@
 /**
  * @file Restaurants.js
  * @author Code Fellows
+ * @description Displays a map and a list of restaurants
  */
 import React from "react";
 
 class Restaurants extends React.Component {
+
+  /**
+   * Draw the component
+   * 
+   * @returns {Component}
+   */
   render() {
     console.log(
       "Restaurants.render() restaurants.length" + this.props.restaurants.length

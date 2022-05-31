@@ -7,6 +7,12 @@ import React from "react";
 import { Image } from "react-bootstrap";
 
 class BeastImage extends React.Component {
+
+  /**
+   * Iniitialize the status attribute
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -22,6 +28,11 @@ class BeastImage extends React.Component {
     this.setState({ status: newStatus });
   };
 
+  /**
+   * Draw the BeastImage
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <div className="beastImage" onClick={this.handleClick}>

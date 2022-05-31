@@ -10,6 +10,12 @@ import { Navbar } from "react-bootstrap";
  * Renders the page footer
  */
 class Footer extends React.Component {
+
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Navbar bg="dark" variant="dark">

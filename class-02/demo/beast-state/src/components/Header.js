@@ -10,6 +10,12 @@ import { Navbar } from "react-bootstrap";
  * Defines the page header (not head)
  */
 class Header extends React.Component {
+
+  /**
+   * Draw the content.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Navbar bg="dark" variant="dark">

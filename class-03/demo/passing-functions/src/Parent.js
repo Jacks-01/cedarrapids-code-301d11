@@ -11,6 +11,12 @@ import Child from "./Child";
  * A parent person
  */
 class Parent extends React.Component {
+
+  /**
+   * Initialize the state attributes
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +25,12 @@ class Parent extends React.Component {
     };
   }
 
+  /**
+   * Transfer money from the parent to Billy as a response to a request from
+   * the Child component.
+   * 
+   * @param {number} dollars - the amount of dollars to give to Billy
+   */
   giveMoneyToBilly = (dollars) => {
     const parentBalance = this.state.money - dollars;
     this.setState({
@@ -30,6 +42,11 @@ class Parent extends React.Component {
     }
   };
 
+  /**
+   * Draw the component 
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <CardGroup>

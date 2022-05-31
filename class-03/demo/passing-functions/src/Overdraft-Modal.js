@@ -7,6 +7,12 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap";
 
 class OverdraftModal extends React.Component {
+
+  /**
+   * Displays the Modal window as determined by the show attribute.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Modal show={this.props.show} onHide={this.props.onClose}>

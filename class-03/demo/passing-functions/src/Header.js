@@ -10,6 +10,12 @@ import Navbar from "react-bootstrap/Navbar";
  * Renders the header as a react-bootstrap Navbar
  */
 class Header extends React.Component {
+
+  /**
+   * Draw the component 
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Navbar bg="dark" variant="dark">

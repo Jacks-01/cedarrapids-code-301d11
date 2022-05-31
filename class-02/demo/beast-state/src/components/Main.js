@@ -11,6 +11,12 @@ import BeastImage from "./BeastImage";
  * Renders the main section of the page
  */
 class Main extends React.Component {
+
+  /**
+   * Draw the content.
+   * 
+   * @returns {Component}
+   */
   render() {
     const beastImages = this.props.imageUrls;
     return (
