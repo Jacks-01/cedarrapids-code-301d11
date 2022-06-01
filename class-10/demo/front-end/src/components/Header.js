@@ -1,6 +1,19 @@
+/**
+ * @file Header.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description A standard page header.
+ * 
+ */
 import React from "react";
 
 class Header extends React.Component {
+
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <header>

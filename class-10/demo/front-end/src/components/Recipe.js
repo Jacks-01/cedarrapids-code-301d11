@@ -1,6 +1,19 @@
+/**
+ * @file Recipe.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description Defines the Recipe class
+ * 
+ */
 import React from "react";
 
 class Recipe extends React.Component {
+
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <>

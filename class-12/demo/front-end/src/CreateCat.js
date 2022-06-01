@@ -1,10 +1,18 @@
 /**
  * @file CreateCat.js
+ * @author Code Fellows
+ * @description Draw and handle the cat creation form.
  */
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 
 class CreateCat extends React.Component {
+
+  /**
+   * Handle the submission of the form.
+   * 
+   * @param {object} evt - an event object
+   */
   handleSubmit = (evt) => {
     evt.preventDefault();
     console.log(`CatCreate.handleSubmit()`);
@@ -24,6 +32,11 @@ class CreateCat extends React.Component {
     this.props.onCreate(cat);
   };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>

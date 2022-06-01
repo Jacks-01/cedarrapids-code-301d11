@@ -1,7 +1,15 @@
-"use strict";
+/**
+ * @file recipes.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description Provide functionality for the recipes endpoint.
+ *
+ */
+'use strict';
 
-const axios = require("axios");
-const Recipe = require("./recipe-class");
+
+const axios = require('axios');
+const Recipe = require('./recipe-class');
 
 const inMemoryDB = {};
 

@@ -1,10 +1,17 @@
 /**
  * @file Header.js
  * @author Code Fellows
+ * @description A typical page header
  */
 import React from "react";
 
 class Header extends React.Component {
+
+  /**
+   * Draw the component
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <div id="header">

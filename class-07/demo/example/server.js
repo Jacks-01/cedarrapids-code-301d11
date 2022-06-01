@@ -1,12 +1,14 @@
 /**
  * @file server.js
  */
-const express = require("express"); // load the library
+const express = require('express'); // load the library
 const app = express(); // create an object
 const port = process.env.PORT || 5000;
-//const port = 5000;
 
-app.get("/weather", (req, res) => {
+/**
+ * Defines an endpoint for retrieving weather.
+ */
+app.get('/weather', (req, res) => {
   res.send({ express: req.query.city });
 });
 
@@ -15,11 +17,14 @@ app.get("/weather", (req, res) => {
  * requests.
  *
  */
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send({ express: req.query.city });
 });
 
-// Start the server
+/**
+ * Start the server and display a message to the CONSOLE (not browser) that
+ * the server is listening on port.
+ */
 app.listen(port, () => {
-  console.log("Listing on port ", port);
+  console.log('Listing on port ', port);
 });

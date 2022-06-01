@@ -1,3 +1,10 @@
+/**
+ * @file index.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description The primary page for the application.
+ * 
+ */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

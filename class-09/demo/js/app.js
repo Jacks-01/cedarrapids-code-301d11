@@ -6,27 +6,29 @@
  */
 
 /**
- * Initialize any values after page load.
+ * Initialize any values after page load.  This is called by the
+ * onLoad event of the body tag in the HTML page.
  */
 function initialize() {
   console.log(`Initialize`);
-  let button = document.getElementById("demoButton");
-  button.addEventListener("click", handleClick, false);
+  let button = document.getElementById('demoButton');
+  button.addEventListener('click', handleClick, false);
 }
 
 /**
  * Event handler for the button click
+ * 
  * @param {object} evt - the event object
  */
 function handleClick(evt) {
   console.log(`handleClick()`);
-  let output = document.getElementById("outParagraph");
+  let output = document.getElementById('outParagraph');
   let value = Math.floor(Math.random() * 10);
   let prom = new Promise((resolve, reject) => {
     if (value % 2 === 0) {
-      resolve("Good");
+      resolve('Good');
     } else {
-      reject(new Error("Bad"));
+      reject(new Error('Bad'));
     }
   });
   prom

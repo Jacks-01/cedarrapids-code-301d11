@@ -1,4 +1,12 @@
-"use strict";
+/**
+ * @file recipe-class.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description Defines a class for Recipe objects.
+ *
+ */
+'use strict';
+
 
 module.exports = class {
   constructor(recipe) {

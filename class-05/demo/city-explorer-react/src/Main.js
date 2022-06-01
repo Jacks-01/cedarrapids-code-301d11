@@ -10,6 +10,16 @@ import map from "./images/map.png";
 import Restaurants from "./Restaurants";
 
 class Main extends React.Component {
+
+  /**
+   * Inititialize the state attributes.
+   * 
+   * displayResult: Boolean - whether to display this component
+   * locationObj: Object - information related to the location to be displayed
+   * restaurants: Array - a list of Restaurant objects
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -19,12 +29,22 @@ class Main extends React.Component {
     };
   }
 
+  /**
+   * Event handler for submision of the search form.
+   * 
+   * @param {object} evt - the event object
+   */
   handleLocationSearch = (evt) => {
     evt.preventDefault();
     this.setState({ displayResult: true });
     console.log("handleLocationSearch()");
   };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <div id="main">

@@ -1,15 +1,19 @@
 /**
  * @file Cats.js
+ * @author Code Fellows
+ * @description Responsible for rendering a list of Cats.
  */
 import React from "react";
 import { ListGroup } from "react-bootstrap";
 import Cat from "./Cat";
 
 class Cats extends React.Component {
-  delete = () => {
-    this.props.onDelete(this.props.info);
-  };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <ListGroup>

@@ -1,10 +1,18 @@
 /**
  * @file CatsForm.js
+ * @author Code Fellows
+ * @description Displays cats and a form to filter them by location.
  */
 import React from "react";
 import CatsList from "./CatsList";
 
 class CatsForm extends React.Component {
+
+  /**
+   * Handles the form submission for filtering be location.
+   * 
+   * @param {object} evt - the event object
+   */
   handleSubmission = (evt) => {
     evt.preventDefault();
     const location = evt.target.location.value;
@@ -12,6 +20,11 @@ class CatsForm extends React.Component {
     this.props.fetchCats(location);
   };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <div>
