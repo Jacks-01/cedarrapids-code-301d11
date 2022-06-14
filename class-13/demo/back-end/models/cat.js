@@ -3,9 +3,9 @@
  * @author Code Fellows
  * @description Cat schema for mongodb
  */
-"use strict";
+'use strict';
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const catSchema = new Schema({
@@ -15,6 +15,6 @@ const catSchema = new Schema({
   location: String,
 });
 
-const Cat = mongoose.model("Cat", catSchema);
+const Cat = mongoose.model('Cat', catSchema);
 
 module.exports = Cat;

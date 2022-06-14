@@ -1,7 +1,22 @@
+/**
+ * @file IngredientForm.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description Provides a form and form handling logic for getting recipes.
+ * 
+ */
 import React from "react";
 import axios from "axios";
 
 class IngredientForm extends React.Component {
+
+  /**
+   * Initializes the attributes.
+   * 
+   * ingredient: String - the specified ingredient to use in recipe searches.
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -9,6 +24,11 @@ class IngredientForm extends React.Component {
     };
   }
 
+  /**
+   * Handle the submission event for searching for recipes.
+   * 
+   * @param {object} evt - an event object
+   */
   getRecipes = async (evt) => {
     evt.preventDefault();
     console.log(
@@ -21,6 +41,11 @@ class IngredientForm extends React.Component {
     this.props.updateRecipes(recipes.data);
   };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <form onSubmit={this.getRecipes}>

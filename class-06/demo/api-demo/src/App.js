@@ -2,6 +2,8 @@
  * @file App.js
  * @author Code Fellows
  * @description Class 06 Demo with LocationIQ API call
+ *    NOTE: This requires the installation of the axios package
+ *          npm install axios --save
  */
 import React from "react";
 import axios from "axios";
@@ -9,6 +11,10 @@ import axios from "axios";
 class App extends React.Component {
   /**
    * sets the search query and location state attributes
+   * 
+   * searchQuery: String - the location name to be passed to the API
+   * location: Object - the object containing useful location data
+   * 
    * @param {object} props  - the properties object
    */
   constructor(props) {
@@ -36,6 +42,11 @@ class App extends React.Component {
     this.setState({ location: res.data[0] });
   };
 
+  /**
+   * Draw the component
+   * 
+   * @returns {Component}
+   */
   render() {
     console.log(`Location: ${JSON.stringify(this.state.location)}`);
     return (

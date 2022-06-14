@@ -5,6 +5,12 @@
 import React from "react";
 
 class Map extends React.Component {
+
+  /**
+   * Draw the component
+   * 
+   * @returns {Component}
+   */
   render() {
     console.log("Map.render() map:" + this.props.map);
     return (

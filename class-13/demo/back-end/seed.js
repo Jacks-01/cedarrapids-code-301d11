@@ -1,3 +1,12 @@
+/**
+ * @file seed.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description Put some initial data into the database.
+ *
+ */
+'use strict';
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

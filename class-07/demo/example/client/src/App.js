@@ -1,5 +1,7 @@
 /**
  * @file App.js
+ * @author Code Fellows
+ * @description Handles the primary display and app logic for the application.
  */
 import React from "react";
 import CityForm from "./CityForm";
@@ -7,6 +9,15 @@ import DataDisplay from "./DataDisplay";
 import "./App.css";
 
 class App extends React.Component {
+
+  /**
+   * Initialize the state attributes.
+   * 
+   * data: Object - the data about the city
+   * city: String - The name of a city to search for and display
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -68,6 +79,11 @@ class App extends React.Component {
     console.log(`App.handleSearch() data: ${this.state.data}`);
   };
 
+  /**
+   * Draw the component
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <div className="App">

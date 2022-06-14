@@ -1,3 +1,12 @@
+/**
+ * @file index.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description The standard index page for the application
+ * 
+ */
+'use strict';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

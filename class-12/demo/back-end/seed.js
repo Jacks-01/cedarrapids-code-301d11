@@ -1,3 +1,14 @@
+/**
+ * @file seed.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description A helper script to populate the database with test data.  To
+ *              use, navigate to this directory and type:
+ *              >node seed.js
+ *
+ */
+'use strict';
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

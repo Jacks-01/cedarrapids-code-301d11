@@ -1,10 +1,18 @@
 /**
  * @file UpdateCatForm.js
+ * @author Code Fellows
+ * @description Define and handle the cat update form.
  */
 import React from "react";
 import { Form, Button, Modal } from "react-bootstrap";
 
 class UpdateCatForm extends React.Component {
+
+  /**
+   * Initializes the start attributes.
+   * 
+   * @param {object} props - the properties object
+   */
   constructor(props) {
     super(props);
     if (this.props.cat) {
@@ -27,8 +35,9 @@ class UpdateCatForm extends React.Component {
   }
 
   /**
-   * Handle the event when the user clicks the submit button
-   * @param {*} evt
+   * Handle the event when the user clicks the submit button.
+   * 
+   * @param {*} evt - the event object
    */
   handleSubmit = (evt) => {
     console.log(`UpdateCatForm.handleSubmit()`);
@@ -80,6 +89,11 @@ class UpdateCatForm extends React.Component {
     this.props.onClose();
   };
 
+  /**
+   * Draw the component.
+   * 
+   * @returns {Component}
+   */
   render() {
     return (
       <Modal show={this.props.show} onHide={this.handleClose}>

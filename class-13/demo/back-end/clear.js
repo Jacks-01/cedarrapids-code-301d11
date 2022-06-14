@@ -1,3 +1,12 @@
+/**
+ * @file clear.js
+ * @date 2022-06-01
+ * @author Code Fellows
+ * @description a helper script to clear the database
+ *
+ */
+'use strict';
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

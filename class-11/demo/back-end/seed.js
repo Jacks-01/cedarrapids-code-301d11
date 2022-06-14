@@ -1,3 +1,14 @@
+/**
+ * @file seed.js
+ * @date 2022-06-01
+ * @author Code Fellow
+ * @description Used to populate the database with sample data.  To use, run
+ *              from the command line by navigating to this folder and entering
+ *              >node seed.js
+ *
+ */
+'use strict';
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

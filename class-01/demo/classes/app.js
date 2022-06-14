@@ -53,6 +53,7 @@ class Dog extends Animal {
   };
 } // end class Dog
 
+// Instantiate a dog object
 const spot = new Dog(
   {
     name: "Spot",
@@ -62,5 +63,6 @@ const spot = new Dog(
   "dalmation"
 );
 
+// Try the dog's methods
 spot.speak();
 spot.goodBoi();
